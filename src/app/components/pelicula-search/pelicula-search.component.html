@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col">
+        <input #termino type="text" (keyup)="buscar(termino.value)" (keydown)="buscar(termino.value)" class="form-control" placeholder="Buscar Pelicula...">
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+<div class="card-columns" *ngIf="peliculas[0]!=undefined">
+
+
+    <app-pelicula-tarjeta [peliculas]="peliculas" ></app-pelicula-tarjeta>
+
+</div>
